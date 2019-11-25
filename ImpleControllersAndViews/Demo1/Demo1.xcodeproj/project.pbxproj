@@ -13,6 +13,7 @@
 		A39BB7B2238BC1CA0014DA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7B0238BC1CA0014DA88 /* Main.storyboard */; };
 		A39BB7B4238BC1CC0014DA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7B3238BC1CC0014DA88 /* Assets.xcassets */; };
 		A39BB7B7238BC1CC0014DA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7B5238BC1CC0014DA88 /* LaunchScreen.storyboard */; };
+		A39BB7BF238BC6070014DA88 /* PickerValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BB7BE238BC6070014DA88 /* PickerValueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A39BB7B3238BC1CC0014DA88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39BB7B6238BC1CC0014DA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39BB7B8238BC1CC0014DA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39BB7BE238BC6070014DA88 /* PickerValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerValueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A39BB7B3238BC1CC0014DA88 /* Assets.xcassets */,
 				A39BB7B5238BC1CC0014DA88 /* LaunchScreen.storyboard */,
 				A39BB7B8238BC1CC0014DA88 /* Info.plist */,
+				A39BB7BE238BC6070014DA88 /* PickerValueViewController.swift */,
 			);
 			path = Demo1;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39BB7BF238BC6070014DA88 /* PickerValueViewController.swift in Sources */,
 				A39BB7AF238BC1C90014DA88 /* ViewController.swift in Sources */,
 				A39BB7AB238BC1C90014DA88 /* AppDelegate.swift in Sources */,
 				A39BB7AD238BC1C90014DA88 /* SceneDelegate.swift in Sources */,
