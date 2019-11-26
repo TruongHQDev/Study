@@ -13,6 +13,8 @@
 		A39BB7D6238BD19E0014DA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7D5238BD19E0014DA88 /* Assets.xcassets */; };
 		A39BB7D9238BD19E0014DA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7D7238BD19E0014DA88 /* LaunchScreen.storyboard */; };
 		A39BB7E3238CBAD40014DA88 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BB7E2238CBAD40014DA88 /* ScrollViewController.swift */; };
+		A39BB7E5238CD7BB0014DA88 /* VC1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BB7E4238CD7BB0014DA88 /* VC1ViewController.swift */; };
+		A39BB7E7238CD7D20014DA88 /* VC2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BB7E6238CD7D20014DA88 /* VC2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A39BB7D8238BD19E0014DA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39BB7DA238BD19E0014DA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39BB7E2238CBAD40014DA88 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		A39BB7E4238CD7BB0014DA88 /* VC1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1ViewController.swift; sourceTree = "<group>"; };
+		A39BB7E6238CD7D20014DA88 /* VC2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A39BB7D7238BD19E0014DA88 /* LaunchScreen.storyboard */,
 				A39BB7DA238BD19E0014DA88 /* Info.plist */,
 				A39BB7E2238CBAD40014DA88 /* ScrollViewController.swift */,
+				A39BB7E4238CD7BB0014DA88 /* VC1ViewController.swift */,
+				A39BB7E6238CD7D20014DA88 /* VC2ViewController.swift */,
 			);
 			path = Demo2;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				A39BB7D1238BD1980014DA88 /* ViewController.swift in Sources */,
 				A39BB7E3238CBAD40014DA88 /* ScrollViewController.swift in Sources */,
 				A39BB7CD238BD1980014DA88 /* AppDelegate.swift in Sources */,
+				A39BB7E7238CD7D20014DA88 /* VC2ViewController.swift in Sources */,
+				A39BB7E5238CD7BB0014DA88 /* VC1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
