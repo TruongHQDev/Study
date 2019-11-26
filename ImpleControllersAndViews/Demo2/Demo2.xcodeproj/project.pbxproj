@@ -12,6 +12,7 @@
 		A39BB7D4238BD1980014DA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7D2238BD1980014DA88 /* Main.storyboard */; };
 		A39BB7D6238BD19E0014DA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7D5238BD19E0014DA88 /* Assets.xcassets */; };
 		A39BB7D9238BD19E0014DA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39BB7D7238BD19E0014DA88 /* LaunchScreen.storyboard */; };
+		A39BB7E3238CBAD40014DA88 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BB7E2238CBAD40014DA88 /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A39BB7D5238BD19E0014DA88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39BB7D8238BD19E0014DA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39BB7DA238BD19E0014DA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39BB7E2238CBAD40014DA88 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A39BB7D5238BD19E0014DA88 /* Assets.xcassets */,
 				A39BB7D7238BD19E0014DA88 /* LaunchScreen.storyboard */,
 				A39BB7DA238BD19E0014DA88 /* Info.plist */,
+				A39BB7E2238CBAD40014DA88 /* ScrollViewController.swift */,
 			);
 			path = Demo2;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39BB7D1238BD1980014DA88 /* ViewController.swift in Sources */,
+				A39BB7E3238CBAD40014DA88 /* ScrollViewController.swift in Sources */,
 				A39BB7CD238BD1980014DA88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +288,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTMDGHV8V5;
 				INFOPLIST_FILE = Demo2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTMDGHV8V5;
 				INFOPLIST_FILE = Demo2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
