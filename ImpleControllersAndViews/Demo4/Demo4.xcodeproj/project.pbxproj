@@ -14,6 +14,7 @@
 		A39BB824238D281B0014DA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39BB823238D281B0014DA88 /* Assets.xcassets */; };
 		A39BB827238D281B0014DA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39BB825238D281B0014DA88 /* LaunchScreen.storyboard */; };
 		A3CD74D3238D2E42002E696E /* VC1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD74D2238D2E42002E696E /* VC1ViewController.swift */; };
+		A3CD74D5238E1A73002E696E /* VC2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD74D4238E1A73002E696E /* VC2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A39BB826238D281B0014DA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39BB828238D281B0014DA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3CD74D2238D2E42002E696E /* VC1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1ViewController.swift; sourceTree = "<group>"; };
+		A3CD74D4238E1A73002E696E /* VC2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A39BB825238D281B0014DA88 /* LaunchScreen.storyboard */,
 				A39BB828238D281B0014DA88 /* Info.plist */,
 				A3CD74D2238D2E42002E696E /* VC1ViewController.swift */,
+				A3CD74D4238E1A73002E696E /* VC2ViewController.swift */,
 			);
 			path = Demo4;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				A39BB81F238D28190014DA88 /* ViewController.swift in Sources */,
 				A39BB81B238D28190014DA88 /* AppDelegate.swift in Sources */,
 				A39BB81D238D28190014DA88 /* SceneDelegate.swift in Sources */,
+				A3CD74D5238E1A73002E696E /* VC2ViewController.swift in Sources */,
 				A3CD74D3238D2E42002E696E /* VC1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
