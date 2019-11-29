@@ -11,11 +11,14 @@ import UIKit
 class VC1TableViewController: UITableViewController {
     @IBOutlet var tableTest: UITableView!
     
+    var data = [String]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "TITLETest"
-        
+        data.append("data\(data.count)")
         
         navigationItem.rightBarButtonItem = editButtonItem
         // Uncomment the following line to preserve selection between presentations
@@ -25,6 +28,14 @@ class VC1TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func refresh(_ sender: Any) {
+        data.append("data\(data.count)")
+       // sender.beginRefreshing()
+        var a = sender as! UIRefreshControl
+        a.endRefreshing()
+        tableView.reloadData()
+        
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,7 +45,7 @@ class VC1TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        return data.count
         
     }
 
@@ -42,7 +53,7 @@ class VC1TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = "Title\(indexPath.row)"
+        cell.textLabel?.text = "\(data[indexPath.row])"
         return cell
     }
     
@@ -60,6 +71,7 @@ class VC1TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            data.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
