@@ -18,6 +18,7 @@ class LongPressViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(sender:)))
+        img.addGestureRecognizer(longPress)
     }
     
     override var canBecomeFirstResponder: Bool {
@@ -25,32 +26,34 @@ class LongPressViewController: UIViewController {
     }
     
     @objc func handleLongPress(sender: UILongPressGestureRecognizer) {
-//        if sender.state == .began {
-//            let menu = UIMenuController.shared
-//            becomeFirstResponder()
+        if sender.state == .began {
+            let menu = UIMenuController.shared
+            becomeFirstResponder()
+
+            let menuItemCrop = UIMenuItem(title: "Crop", action: #selector(handleMenuItemAction))
+            let menuItemRotate = UIMenuItem(title: "Rotate", action: #selector(handleMenuItemAction))
+            let menuItemContrast = UIMenuItem(title: "Contrast", action: #selector(handleMenuItemAction))
+
+            menu.menuItems = [menuItemCrop, menuItemRotate, menuItemContrast]
+            let location = sender.location(in: sender.view)
+            let menuLocation = CGRect(x: location.x, y: location.y, width: 0, height: 0)
+           // menu.showMenu(from: sender.view! , rect: menuLocation)
+            menu.setTargetRect(menuLocation, in: sender.view!)
+            menu.setMenuVisible(true, animated: true)
+        }
 //
-//            let menuItemCrop = UIMenuItem(title: "Crop", action: #selector(handleMenuItemAction))
-//            let menuItemRotate = UIMenuItem(title: "Rotate", action: #selector(handleMenuItemAction))
-//            let menuItemContrast = UIMenuItem(title: "Contrast", action: #selector(handleMenuItemAction))
+//        let alert = UIAlertController(title: "Long press", message: "long press hold!", preferredStyle: .alert)
 //
-//            menu.menuItems = [menuItemCrop, menuItemRotate, menuItemContrast]
-//            let location = sender.location(in: sender.view)
-//            let menuLocation = CGRect(x: location.x, y: location.y, width: 0, height: 0)
-//            //menu.showMenu(from: sender.view! , rect: menuLocation)
-//            menu.setTargetRect(<#T##targetRect: CGRect##CGRect#>, in: <#T##UIView#>)
-//            //menu.setMenuVisible(<#T##menuVisible: Bool##Bool#>, animated: <#T##Bool#>)
-//        }
-        
-        let alert = UIAlertController(title: "Long press", message: "long press hold!", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "OK", style: .default)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
+//        let action = UIAlertAction(title: "OK", style: .default)
+//        alert.addAction(action)
+//        self.present(alert, animated: true, completion: nil)
     }
     
     
     
     @objc func handleMenuItemAction() {
+        
+        
         print("menu item tapped")
     }
     
